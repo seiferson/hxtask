@@ -23,7 +23,6 @@ public class APIController {
 
     @PostMapping("/api/v1/tasks")
     public Task createTask(@RequestBody Task task) {
-        task.setStatus("created");
         return taskRepo.insert(task);
     }
 }
