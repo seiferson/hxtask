@@ -19,7 +19,7 @@ public class Task {
     private Date created;
 
     private Date updated;
-    private HashMap<String, String> metadata;
+    private HashMap<String, Object> metadata;
 
     public String getId() {
         return id;
@@ -53,11 +53,11 @@ public class Task {
         this.owner = owner;
     }
 
-    public HashMap<String, String> getMetadata() {
+    public HashMap<String, Object> getMetadata() {
         return metadata;
     }
 
-    public void setMetadata(HashMap<String, String> metadata) {
+    public void setMetadata(HashMap<String, Object> metadata) {
         this.metadata = metadata;
     }
 
