@@ -3,6 +3,7 @@ package com.seiferson.hxtask.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.Date;
 import java.util.HashMap;
 
 @Document
@@ -14,6 +15,10 @@ public class Task {
     private String title;
     private String description;
     private String owner;
+
+    private Date created;
+
+    private Date updated;
     private HashMap<String, String> metadata;
 
     public String getId() {
@@ -54,5 +59,21 @@ public class Task {
 
     public void setMetadata(HashMap<String, String> metadata) {
         this.metadata = metadata;
+    }
+
+    public Date getCreated() {
+        return created;
+    }
+
+    public void setCreated(Date created) {
+        this.created = created;
+    }
+
+    public Date getUpdated() {
+        return updated;
+    }
+
+    public void setUpdated(Date updated) {
+        this.updated = updated;
     }
 }
