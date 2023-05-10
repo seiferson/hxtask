@@ -15,11 +15,9 @@ public class Task {
     private String title;
     private String description;
     private String owner;
-
     private Date created;
-
     private Date updated;
-    private HashMap<String, Object> metadata;
+    private Boolean completed;
 
     public String getId() {
         return id;
@@ -53,13 +51,6 @@ public class Task {
         this.owner = owner;
     }
 
-    public HashMap<String, Object> getMetadata() {
-        return metadata;
-    }
-
-    public void setMetadata(HashMap<String, Object> metadata) {
-        this.metadata = metadata;
-    }
 
     public Date getCreated() {
         return created;
@@ -75,5 +66,13 @@ public class Task {
 
     public void setUpdated(Date updated) {
         this.updated = updated;
+    }
+
+    public Boolean getCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(Boolean completed) {
+        this.completed = completed;
     }
 }
