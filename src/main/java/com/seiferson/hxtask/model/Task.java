@@ -19,6 +19,8 @@ public class Task {
     private Date updated;
     private Boolean completed;
 
+    private HashMap<String, Object> metadata;
+
     public String getId() {
         return id;
     }
@@ -74,5 +76,13 @@ public class Task {
 
     public void setCompleted(Boolean completed) {
         this.completed = completed;
+    }
+
+    public HashMap<String, Object> getMetadata() {
+        return metadata;
+    }
+
+    public void setMetadata(HashMap<String, Object> metadata) {
+        this.metadata = metadata;
     }
 }
